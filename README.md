@@ -30,13 +30,38 @@ From the above characteristic table, we can directly write the next state equati
 
 /* write all the steps invloved */
 
+1.Define Module: Define a Verilog module for the T flip-flop with inputs (T, CLK) and outputs (Q, Q_bar).
+
+2.Declare Inputs and Outputs: Declare input and output ports for the module.
+
+3.Implement Flip-Flop Logic: Write Verilog code to implement the T flip-flop logic based on its functional table. Use a synchronous always @(posedge CLK) block to trigger the flip-flop on the positive edge of the clock signal.
+
+4.Simulate Using Testbench: Write a Verilog testbench to simulate the behavior of the T flip-flop under different input conditions.
+
+5.Apply Input Stimuli: In the testbench, apply various combinations of input stimuli (T, CLK) to cover all possible input states.
+
+6.Verify Output Behavior: Verify that the output behavior of the T flip-flop matches the expected behavior defined by its functional table.
+
+7.Check for Race Conditions: Ensure that there are no race conditions or undefined states in the design by analyzing the timing and sequence of input changes.
+
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by:E Subash Miracle Raj RegisterNumber:24000572
 */
+
+![t1](https://github.com/user-attachments/assets/62c5150a-2da3-4b14-b6a0-c90cb40ef6bd)
+
 
 **RTL LOGIC FOR FLIPFLOPS**
 
+![t2](https://github.com/user-attachments/assets/c9d042db-b717-4971-b092-dbf901fb9661)
+
+
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
+![t3](https://github.com/user-attachments/assets/08d8af80-4b06-46db-822c-a68bd4664886)
+
+
 **RESULTS**
+
+Thus, the T Flip-Flop with positive edge triggering is implemented using Verilog, and its functionality is validated using the truth table and timing diagrams.
